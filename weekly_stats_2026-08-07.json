@@ -1,0 +1,67 @@
+{
+  "generated_utc": "2026-08-07 17:09 UTC",
+  "week": {
+    "from": "2026-07-31",
+    "to": "2026-08-07"
+  },
+  "account": {
+    "balance": 10359.48,
+    "nav": 10359.48,
+    "open_positions": [],
+    "unrealized_pl": 0.0
+  },
+  "week_pl": {
+    "usd": -160.82,
+    "pct": -1.53,
+    "start_balance": 10520.31
+  },
+  "uptime_7d_pct": 27.4,
+  "last_heartbeat_min_ago": 4.0,
+  "per_pair_week": {
+    "AUD_USD": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0
+    },
+    "EUR_JPY": {
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "win_pct": 0.0,
+      "pf": 0.0,
+      "sum_pnl_journal": -39166.07
+    },
+    "GBP_USD": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0
+    }
+  },
+  "gbp_forward_test": {
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_pct": null,
+    "pf": null,
+    "sum_pnl_journal": 0,
+    "backtest_pf": 1.46,
+    "note": "insufficient sample"
+  },
+  "strategy": {
+    "name": "RSI reversion",
+    "rsi": "30/70 fresh cross H4",
+    "pairs_R": {
+      "AUD_USD": 2.0,
+      "EUR_JPY": 1.5,
+      "GBP_USD": 1.5
+    },
+    "risk_per_trade": "1.5%",
+    "note": "demo/practice only; EUR_JPY journal pnl can be overstated, trust balance delta"
+  }
+}
