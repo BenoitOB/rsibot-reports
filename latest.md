@@ -1,9 +1,9 @@
-# RSI Bot — weekly data (2026-07-31 → 2026-08-07)
-_generated 2026-08-07 17:09 UTC_
+# RSI Bot — weekly data (2026-08-01 → 2026-08-08)
+_generated 2026-08-08 11:00 UTC_
 
 - Balance **$10359.48** | NAV $10359.48 | open: flat
-- Week P&L: **$-160.82 (-1.53%)** (start $10520.31)
-- Uptime (7d): **27.4%** | last beat 4.0 min ago
+- Week P&L: **$-160.99 (-1.53%)** (start $10520.47)
+- Uptime (7d): **27.4%** | last beat 5.0 min ago
 
 ## Trades this week (per pair)
 _(authoritative week total P&L is the balance delta above; per-trade journal pnl is unreliable for JPY pairs, so only counts/PF shown)_
