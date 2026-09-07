@@ -1,0 +1,1 @@
+- **2026-09-07 16:14 UTC** — Alert channel test — Test from the OANDA bot. If you can see this commit in rsibot-reports, blocked-strategy alerts will reach you. Nothing is wrong.
