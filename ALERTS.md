@@ -1,2 +1,3 @@
 - **2026-09-07 16:14 UTC** — Alert channel test — Test from the OANDA bot. If you can see this commit in rsibot-reports, blocked-strategy alerts will reach you. Nothing is wrong.
 - **2026-09-07 19:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
+- **2026-09-08 22:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
