@@ -28,3 +28,4 @@
 - **2026-09-16 23:00 UTC** — Trading bot blocked — rsi_reversion_nogate blocked 250 min — consecutive-loss pause (5 losses, resumes 2026-09-17T06:41:04.093682+00:00)
 - **2026-09-16 23:10 UTC** — Trading bot blocked — rsi_reversion_nogate blocked 260 min — consecutive-loss pause (5 losses, resumes 2026-09-17T06:41:04.093682+00:00)
 - **2026-09-16 23:20 UTC** — Trading bot blocked — rsi_reversion_nogate blocked 270 min — consecutive-loss pause (5 losses, resumes 2026-09-17T06:41:04.093682+00:00)
+- **2026-09-16 23:30 UTC** — Trading bot blocked — rsi_reversion_nogate blocked 280 min — consecutive-loss pause (5 losses, resumes 2026-09-17T06:41:04.093682+00:00)
