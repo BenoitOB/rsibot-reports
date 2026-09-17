@@ -70,3 +70,4 @@
 - **2026-09-17 06:00 UTC** — Trading bot blocked — rsi_reversion_nogate blocked 670 min — consecutive-loss pause (5 losses, resumes 2026-09-17T06:41:04.093682+00:00)
 - **2026-09-17 06:10 UTC** — Trading bot blocked — rsi_reversion_nogate blocked 680 min — consecutive-loss pause (5 losses, resumes 2026-09-17T06:41:04.093682+00:00)
 - **2026-09-17 06:20 UTC** — Trading bot resumed — rsi_reversion_nogate resumed after 690 min
+- **2026-09-17 17:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
