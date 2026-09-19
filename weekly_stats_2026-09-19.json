@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-19 20:24 UTC",
+  "generated_utc": "2026-09-19 20:26 UTC",
   "vol_gate": {
     "n": 9,
     "logged": 26,
@@ -46,7 +46,7 @@
     "balance_adjusted_at": null
   },
   "uptime_7d_pct": 100.0,
-  "last_heartbeat_min_ago": 2.0,
+  "last_heartbeat_min_ago": 4.0,
   "per_account": {
     "101-001-39369941-001": {
       "strategies": [
@@ -77,8 +77,7 @@
     },
     "101-001-39369941-003": {
       "strategies": [
-        "rsi_reversion_nogate",
-        "weekend_gap"
+        "rsi_reversion_nogate"
       ],
       "is_main": false,
       "balance": 9209.0,
@@ -101,7 +100,7 @@
       },
       "balance_adjusted_at": null,
       "snapshots": 7952,
-      "shared": true
+      "shared": false
     },
     "101-001-39369941-004": {
       "strategies": [
@@ -124,8 +123,7 @@
   },
   "gap_account": {
     "strategies": [
-      "rsi_reversion_nogate",
-      "weekend_gap"
+      "rsi_reversion_nogate"
     ],
     "is_main": false,
     "balance": 9209.0,
@@ -148,7 +146,7 @@
     },
     "balance_adjusted_at": null,
     "snapshots": 7952,
-    "shared": true,
+    "shared": false,
     "account_id": "101-001-39369941-003"
   },
   "execution_quality": {

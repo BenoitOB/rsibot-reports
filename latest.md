@@ -1,9 +1,9 @@
 # Trading Bots — weekly data (2026-09-12 → 2026-09-19)
-_generated 2026-09-19 20:24 UTC_
+_generated 2026-09-19 20:26 UTC_
 
 - Balance **$9276.14** | NAV $9381.23 | open: [{'instrument': 'GBP_JPY', 'units': '-36484'}, {'instrument': 'USD_JPY', 'units': '-22458'}]
 - Week P&L: **$-868.99 (-8.57%)** (start $10145.13)
-- Uptime (7d): **100.0%** | last beat 2.0 min ago
+- Uptime (7d): **100.0%** | last beat 4.0 min ago
 - API health (7d): **2 failed poll cycles** (0.1% of polls, falling vs prior week) — {'auth_401': 2, 'network': 0, 'other': 0}
 
 ## Strategies running (note: weekend_gap uses its OWN sub-account)
@@ -35,10 +35,8 @@ _the point of running this live: positive slippage = ADVERSE. Total cost = sprea
 | account | strategies | balance | week P&L | open |
 |---|---|---|---|---|
 | 001 | rsi_reversion | $9276.14 | $-868.99 (-8.57%) | 2 |
-| 003 ⚠ SHARED | rsi_reversion_nogate, weekend_gap | $9209.0 | $-576.26 (-5.89%) | 2 |
+| 003 | rsi_reversion_nogate | $9209.0 | $-576.26 (-5.89%) | 2 |
 | 004 | session_breakout | $10284.92 | $0.0 (0.0%) | 0 |
-
-_⚠ a SHARED account's week P&L cannot be attributed to one strategy, and each strategy's risk limits are affected by the other's losses._
 
 ## GBP_USD forward-test (since 2026-08-07)
 - trades 5 | win 40.0% | live PF 1.34 vs backtest 1.46 | insufficient sample
