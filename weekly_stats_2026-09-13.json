@@ -1,107 +1,79 @@
 {
-  "generated_utc": "2026-09-19 11:00 UTC",
+  "generated_utc": "2026-09-13 13:47 UTC",
   "vol_gate": {
-    "n": 9,
-    "logged": 26,
-    "win_pct": 77.8,
-    "pf": 5.52,
-    "expectancy_R": 0.382,
+    "n": 6,
+    "logged": 9,
+    "win_pct": 66.7,
+    "pf": 4.47,
+    "expectancy_R": 0.44,
     "verdict": "GATE IS COSTING US (skipped set is profitable) \u2014 revisit"
   },
   "api_errors": {
-    "failed_poll_cycles_7d": 2,
-    "prior_7d": 4,
+    "failed_poll_cycles_7d": 4,
+    "prior_7d": 132,
     "trend": "falling",
     "by_type": {
-      "auth_401": 2,
+      "auth_401": 4,
       "network": 0,
       "other": 0
     },
-    "pct_of_polls": 0.1,
+    "pct_of_polls": 0.2,
     "note": "occasional transient failures - monitor"
   },
   "week": {
-    "from": "2026-09-12",
-    "to": "2026-09-19"
+    "from": "2026-09-06",
+    "to": "2026-09-13"
   },
   "account": {
-    "balance": 9276.14,
-    "nav": 9381.23,
+    "balance": 10145.13,
+    "nav": 10099.81,
     "open_positions": [
       {
-        "instrument": "GBP_JPY",
-        "units": "-36484"
+        "instrument": "AUD_USD",
+        "units": "47386"
       },
       {
-        "instrument": "USD_JPY",
-        "units": "-22458"
+        "instrument": "USD_CAD",
+        "units": "-56438"
       }
     ],
-    "unrealized_pl": 105.09
+    "unrealized_pl": -45.31
   },
   "week_pl": {
-    "usd": -868.99,
-    "pct": -8.57,
-    "start_balance": 10145.13,
+    "usd": -4.88,
+    "pct": -0.05,
+    "start_balance": 10150.01,
     "balance_adjusted_at": null
   },
   "uptime_7d_pct": 100.0,
-  "last_heartbeat_min_ago": 0.0,
+  "last_heartbeat_min_ago": 5.0,
   "per_account": {
     "101-001-39369941-001": {
       "strategies": [
         "rsi_reversion"
       ],
       "is_main": true,
-      "balance": 9276.14,
-      "nav": 9381.23,
-      "unrealized_pl": 105.09,
+      "balance": 10145.13,
+      "nav": 10099.81,
+      "unrealized_pl": -45.31,
       "open_positions": [
         {
-          "instrument": "GBP_JPY",
-          "units": "-36484"
+          "instrument": "AUD_USD",
+          "units": "47386"
         },
         {
-          "instrument": "USD_JPY",
-          "units": "-22458"
+          "instrument": "USD_CAD",
+          "units": "-56438"
         }
       ],
       "week_pl": {
-        "usd": -868.99,
-        "pct": -8.57,
-        "start_balance": 10145.13
+        "usd": -4.88,
+        "pct": -0.05,
+        "start_balance": 10150.01
       },
       "balance_adjusted_at": null,
-      "snapshots": 23459,
+      "snapshots": 21767,
       "shared": false
-    },
-    "101-001-39369941-003": {
-      "strategies": [
-        "rsi_reversion_nogate",
-        "weekend_gap"
-      ],
-      "is_main": false,
-      "balance": 9209.0,
-      "nav": 9313.66,
-      "unrealized_pl": 104.66,
-      "open_positions": [
-        {
-          "instrument": "GBP_JPY",
-          "units": "-36220"
-        },
-        {
-          "instrument": "USD_JPY",
-          "units": "-22295"
-        }
-      ],
-      "week_pl": {
-        "usd": -576.26,
-        "pct": -5.89,
-        "start_balance": 9785.26
-      },
-      "balance_adjusted_at": null,
-      "snapshots": 7840,
-      "shared": true
     },
     "101-001-39369941-004": {
       "strategies": [
@@ -120,35 +92,43 @@
       "balance_adjusted_at": null,
       "snapshots": 7865,
       "shared": false
+    },
+    "101-001-39369941-003": {
+      "strategies": [
+        "weekend_gap"
+      ],
+      "is_main": false,
+      "balance": 9785.26,
+      "nav": 9785.26,
+      "unrealized_pl": 0.0,
+      "open_positions": [],
+      "week_pl": {
+        "usd": 0.0,
+        "pct": 0.0,
+        "start_balance": 9785.26
+      },
+      "balance_adjusted_at": null,
+      "snapshots": 6204,
+      "shared": false
     }
   },
   "gap_account": {
     "strategies": [
-      "rsi_reversion_nogate",
       "weekend_gap"
     ],
     "is_main": false,
-    "balance": 9209.0,
-    "nav": 9313.66,
-    "unrealized_pl": 104.66,
-    "open_positions": [
-      {
-        "instrument": "GBP_JPY",
-        "units": "-36220"
-      },
-      {
-        "instrument": "USD_JPY",
-        "units": "-22295"
-      }
-    ],
+    "balance": 9785.26,
+    "nav": 9785.26,
+    "unrealized_pl": 0.0,
+    "open_positions": [],
     "week_pl": {
-      "usd": -576.26,
-      "pct": -5.89,
+      "usd": 0.0,
+      "pct": 0.0,
       "start_balance": 9785.26
     },
     "balance_adjusted_at": null,
-    "snapshots": 7840,
-    "shared": true,
+    "snapshots": 6204,
+    "shared": false,
     "account_id": "101-001-39369941-003"
   },
   "execution_quality": {
@@ -167,33 +147,33 @@
       "note": "positive slippage = ADVERSE (worse than the signal assumed); this is what the backtest could not model"
     },
     "all": {
-      "n": 18,
-      "n_closed": 12,
-      "avg_entry_slippage": -0.00464,
-      "avg_spread_pips_at_entry": 2.14444,
+      "n": 3,
+      "n_closed": 1,
+      "avg_entry_slippage": 0.00016,
+      "avg_spread_pips_at_entry": 2.2,
       "avg_gap_atr": 0.86986,
-      "avg_delay_min": 30.48264,
-      "n_stopped_out": 7,
-      "avg_stop_slippage": 6e-05,
+      "avg_delay_min": 165.13211,
+      "n_stopped_out": 1,
+      "avg_stop_slippage": 2e-05,
       "by_exit_reason": {
-        "stop": 7
+        "stop": 1
       },
       "note": "positive slippage = ADVERSE (worse than the signal assumed); this is what the backtest could not model"
     }
   },
   "per_pair_week": {
     "AUD_USD": {
-      "trades": 5,
-      "wins": 1,
-      "losses": 4,
-      "win_pct": 20.0,
-      "pf": 0.04,
-      "sum_pnl_journal": -351.24,
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
       "strategies": [
         "rsi_reversion",
-        "rsi_reversion_nogate"
+        "weekend_gap"
       ],
-      "strategy": "rsi_reversion, rsi_reversion_nogate"
+      "strategy": "rsi_reversion, weekend_gap"
     },
     "EUR_JPY": {
       "trades": 0,
@@ -209,16 +189,17 @@
       "strategy": "rsi_reversion, weekend_gap"
     },
     "EUR_USD": {
-      "trades": 1,
+      "trades": 0,
       "wins": 0,
-      "losses": 1,
-      "win_pct": 0.0,
-      "pf": 0.0,
-      "sum_pnl_journal": -95.72,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
       "strategies": [
-        "rsi_reversion_nogate"
+        "rsi_reversion",
+        "weekend_gap"
       ],
-      "strategy": "rsi_reversion_nogate"
+      "strategy": "rsi_reversion, weekend_gap"
     },
     "GBP_JPY": {
       "trades": 0,
@@ -228,10 +209,9 @@
       "pf": null,
       "sum_pnl_journal": 0,
       "strategies": [
-        "rsi_reversion",
-        "rsi_reversion_nogate"
+        "rsi_reversion"
       ],
-      "strategy": "rsi_reversion, rsi_reversion_nogate"
+      "strategy": "rsi_reversion"
     },
     "GBP_USD": {
       "trades": 0,
@@ -242,9 +222,9 @@
       "sum_pnl_journal": 0,
       "strategies": [
         "rsi_reversion",
-        "rsi_reversion_nogate"
+        "weekend_gap"
       ],
-      "strategy": "rsi_reversion, rsi_reversion_nogate"
+      "strategy": "rsi_reversion, weekend_gap"
     },
     "NZD_USD": {
       "trades": 0,
@@ -255,22 +235,22 @@
       "sum_pnl_journal": 0,
       "strategies": [
         "rsi_reversion",
-        "rsi_reversion_nogate"
+        "weekend_gap"
       ],
-      "strategy": "rsi_reversion, rsi_reversion_nogate"
+      "strategy": "rsi_reversion, weekend_gap"
     },
     "USD_CAD": {
-      "trades": 5,
+      "trades": 0,
       "wins": 0,
-      "losses": 5,
-      "win_pct": 0.0,
-      "pf": 0.0,
-      "sum_pnl_journal": -1010.26,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
       "strategies": [
         "rsi_reversion",
-        "rsi_reversion_nogate"
+        "weekend_gap"
       ],
-      "strategy": "rsi_reversion, rsi_reversion_nogate"
+      "strategy": "rsi_reversion, weekend_gap"
     },
     "USD_JPY": {
       "trades": 0,
@@ -280,20 +260,19 @@
       "pf": null,
       "sum_pnl_journal": 0,
       "strategies": [
-        "rsi_reversion",
-        "rsi_reversion_nogate"
+        "rsi_reversion"
       ],
-      "strategy": "rsi_reversion, rsi_reversion_nogate"
+      "strategy": "rsi_reversion"
     }
   },
   "per_strategy_week": {
     "rsi_reversion": {
-      "trades": 6,
-      "wins": 1,
-      "losses": 5,
-      "win_pct": 16.7,
-      "pf": 0.02,
-      "sum_pnl_journal": -880.97,
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
       "running": true,
       "pairs_active": [
         "AUD_USD",
@@ -307,27 +286,6 @@
       "risk_per_trade": "2.0%",
       "account": "001",
       "account_id": "101-001-39369941-001"
-    },
-    "rsi_reversion_nogate": {
-      "trades": 5,
-      "wins": 0,
-      "losses": 5,
-      "win_pct": 0.0,
-      "pf": 0.0,
-      "sum_pnl_journal": -576.26,
-      "running": true,
-      "pairs_active": [
-        "AUD_USD",
-        "GBP_USD",
-        "EUR_USD",
-        "NZD_USD",
-        "USD_JPY",
-        "USD_CAD",
-        "GBP_JPY"
-      ],
-      "risk_per_trade": "2.0%",
-      "account": "003",
-      "account_id": "101-001-39369941-003"
     },
     "session_breakout": {
       "trades": 0,
@@ -381,31 +339,16 @@
       "GBP_JPY": "rsi_reversion"
     },
     "gap": {
-      "EUR_USD": "rsi_reversion_nogate",
-      "GBP_USD": "rsi_reversion_nogate",
-      "AUD_USD": "rsi_reversion_nogate",
-      "USD_CAD": "rsi_reversion_nogate",
-      "NZD_USD": "rsi_reversion_nogate",
-      "EUR_JPY": "weekend_gap",
-      "USD_JPY": "rsi_reversion_nogate",
-      "GBP_JPY": "rsi_reversion_nogate"
+      "EUR_USD": "weekend_gap",
+      "GBP_USD": "weekend_gap",
+      "AUD_USD": "weekend_gap",
+      "USD_CAD": "weekend_gap",
+      "NZD_USD": "weekend_gap",
+      "EUR_JPY": "weekend_gap"
     }
   },
   "strategies": {
     "rsi_reversion": {
-      "running": true,
-      "pairs": [
-        "AUD_USD",
-        "GBP_USD",
-        "EUR_USD",
-        "NZD_USD",
-        "USD_JPY",
-        "USD_CAD",
-        "GBP_JPY"
-      ],
-      "risk_per_trade": "2.0%"
-    },
-    "rsi_reversion_nogate": {
       "running": true,
       "pairs": [
         "AUD_USD",
