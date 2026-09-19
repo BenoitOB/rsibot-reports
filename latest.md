@@ -1,9 +1,9 @@
 # Trading Bots — weekly data (2026-09-12 → 2026-09-19)
-_generated 2026-09-19 11:00 UTC_
+_generated 2026-09-19 20:24 UTC_
 
 - Balance **$9276.14** | NAV $9381.23 | open: [{'instrument': 'GBP_JPY', 'units': '-36484'}, {'instrument': 'USD_JPY', 'units': '-22458'}]
 - Week P&L: **$-868.99 (-8.57%)** (start $10145.13)
-- Uptime (7d): **100.0%** | last beat 0.0 min ago
+- Uptime (7d): **100.0%** | last beat 2.0 min ago
 - API health (7d): **2 failed poll cycles** (0.1% of polls, falling vs prior week) — {'auth_401': 2, 'network': 0, 'other': 0}
 
 ## Strategies running (note: weekend_gap uses its OWN sub-account)

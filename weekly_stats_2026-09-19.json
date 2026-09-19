@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-19 11:00 UTC",
+  "generated_utc": "2026-09-19 20:24 UTC",
   "vol_gate": {
     "n": 9,
     "logged": 26,
@@ -46,7 +46,7 @@
     "balance_adjusted_at": null
   },
   "uptime_7d_pct": 100.0,
-  "last_heartbeat_min_ago": 0.0,
+  "last_heartbeat_min_ago": 2.0,
   "per_account": {
     "101-001-39369941-001": {
       "strategies": [
@@ -72,7 +72,7 @@
         "start_balance": 10145.13
       },
       "balance_adjusted_at": null,
-      "snapshots": 23459,
+      "snapshots": 23571,
       "shared": false
     },
     "101-001-39369941-003": {
@@ -100,7 +100,7 @@
         "start_balance": 9785.26
       },
       "balance_adjusted_at": null,
-      "snapshots": 7840,
+      "snapshots": 7952,
       "shared": true
     },
     "101-001-39369941-004": {
@@ -147,7 +147,7 @@
       "start_balance": 9785.26
     },
     "balance_adjusted_at": null,
-    "snapshots": 7840,
+    "snapshots": 7952,
     "shared": true,
     "account_id": "101-001-39369941-003"
   },
