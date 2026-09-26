@@ -1,37 +1,37 @@
 ```
 ==============================================================================
-WEEKLY REVIEW — 2026-09-19 20:26 UTC
-baseline: 2026-09-18 rev no-git | 731 sim trades / 5.49y | exp +0.135R sd 0.89
+WEEKLY REVIEW — 2026-09-26 11:00 UTC
+baseline: 2026-09-19 rev no-git | 328 sim trades / 5.49y | exp +0.100R sd 0.80
 ==============================================================================
 
 A. EXECUTION INTEGRITY  — bugs; one occurrence is enough to act
   [OK  ] stop exits worse than -1.35R: 0
-  [OK  ] days since last entry: 1.5 (expected 0.5 at 2.56/wk, P(zero)=0.583) — within normal quiet
+  [OK  ] days since last entry: 1.9 (expected 0.3 at 1.15/wk, P(zero)=0.730) — within normal quiet
   [OK  ] broker close/order rejections (7d): 0
   [OK  ] failed poll cycles (7d): 1  [auth-401: 25]  ~0.05% of polls
   [OK  ] journal rows open but closed at broker: 0
   [OK  ] known bug artefacts excluded from scoring: #41, #42, #43
-  [OK  ] exit-mix check deferred (n=11, needs 15)
+  [WARN] exit mix live vs expected: stop 25%/18%  time 75%/39%  target 0%/1%
 
 B. EDGE TRACKING  — observe; act ONLY on a band breach
-  closed under current rules: n=11  sumR=-5.61  mean=-0.510R
-  expected +0.135R, 95% band at n~10: [-0.419, +0.689]  (cum [-4.2, +6.9]R)
+  closed under current rules: n=16  sumR=-4.83  mean=-0.302R
+  expected +0.100R, 95% band at n~20: [-0.249, +0.450]  (cum [-5.0, +9.0]R)
   [ACT ] BELOW the 95% band — investigate before it compounds
-  progress to significance: 11/169 trades (~1.2 more years at 2.56/wk)
+  progress to significance: 16/242 trades (~3.8 more years at 1.15/wk)
 
   kill switch: trailing 50 closed trades sum < -5.0R -> take the strategy off risk
-  [warm-up] 11/50 trades under current rules — not armed yet (~3.5 months to arm)
+  [warm-up] 16/50 trades under current rules — not armed yet (~6.9 months to arm)
   interim backstop remains the account drawdown halt (note: enforce_halts is False on this practice account)
 
 C. PAIR WATCH  — informational ONLY. Do not prune on these numbers.
   pair      live n   live R   exp R  yrs+  note
-  USD_CAD        4   -0.847  -0.017  3/6   lowest-ranked (NOT a drop signal — see note above)
-  GBP_JPY        0        -  +0.077  4/6   inconsistent across years
-  EUR_USD        1   -0.029  +0.126  5/6   
-  AUD_USD        3   -0.438  +0.143  5/6   
-  USD_JPY        1   +0.018  +0.162  5/6   
-  GBP_USD        1   -0.414  +0.176  5/6   
-  NZD_USD        1   -0.484  +0.265  6/6   
+  GBP_USD        1   -0.414  -0.089  0/1   lowest-ranked (NOT a drop signal — see note above)
+  USD_CAD        4   -0.847  +0.018  4/6   inconsistent across years
+  GBP_JPY        2   +0.066  +0.027  4/6   inconsistent across years
+  USD_JPY        4   +0.166  +0.086  3/5   inconsistent across years
+  EUR_USD        1   -0.029  +0.211  1/1   
+  NZD_USD        1   -0.484  +0.221  4/6   inconsistent across years
+  AUD_USD        3   -0.438  +0.238  4/6   inconsistent across years
 
 D. RESEARCH QUEUE  — one falsifiable test per week, bar set in advance
   pass bar (fixed before any test runs): pooled_pf >= 1.30 net of measured spreads; year_consistency positive in >= 2/3 of full years tested; breadth positive on >= 5 of 8 instruments; tuning none — parameters fixed before the test, no post-hoc sweeps; sample >= 200 trades or the result is 'insufficient', not 'fail'; _calibration_2026_09_13 A 26-week-shifted placebo on ~200-trade terciles produced a 0.14R gap from noise (cftc-positioning-conditioning). The 0.10R pooled-gap bar is below that floor. Raise the bar above ~0.15R for tercile comparisons at this sample size, or require a placebo arm to establish the floor for that specific test.

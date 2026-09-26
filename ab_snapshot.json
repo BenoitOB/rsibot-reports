@@ -1,91 +1,36 @@
 {
- "ts": "2026-09-19T20:26:09Z",
+ "ts": "2026-09-26T11:00:14Z",
  "experiment_start_utc": "2026-09-13T18:25:43.291653+00:00",
- "registered_utc": "2026-09-18T20:56:20.047489+00:00",
+ "registered_utc": "2026-09-19T21:11:23.850619+00:00",
  "control": {
   "account_id": "101-001-39369941-001",
-  "nav": 9381.23,
-  "balance": 9276.14,
-  "unrealized": 105.09,
-  "open": 3,
-  "ab_trades": 7,
-  "drawdown_pct": 7.13,
+  "nav": 9415.28,
+  "balance": 9415.28,
+  "unrealized": 0.0,
+  "open": 0,
+  "ab_trades": 9,
+  "drawdown_pct": 6.79,
   "would_block": {},
-  "ab_closed": 4,
-  "ab_total_R": -2.336,
+  "ab_closed": 9,
+  "ab_total_R": -1.559,
   "ab_incremental": 0,
   "ab_incremental_R": 0,
   "peak_nav": 10101.39
  },
  "candidate": {
   "account_id": "101-001-39369941-003",
-  "nav": 9313.66,
-  "balance": 9209.0,
-  "unrealized": 104.66,
-  "open": 3,
-  "ab_trades": 8,
-  "drawdown_pct": 5.36,
+  "nav": 9343.09,
+  "balance": 9343.09,
+  "unrealized": 0.0,
+  "open": 0,
+  "ab_trades": 10,
+  "drawdown_pct": 5.07,
   "would_block": {},
-  "ab_closed": 5,
-  "ab_total_R": -2.9,
+  "ab_closed": 10,
+  "ab_total_R": -2.146,
   "ab_incremental": 1,
   "ab_incremental_R": -0.458,
   "peak_nav": 9841.61
  },
- "positions": [
-  {
-   "pair": "USD_JPY",
-   "direction": "short",
-   "units": -22458.0,
-   "opened_utc": "2026-09-18T05:01:13Z",
-   "account_id": "101-001-39369941-001",
-   "arm": "control",
-   "pl": 31.92
-  },
-  {
-   "pair": "GBP_JPY",
-   "direction": "short",
-   "units": -19570.0,
-   "opened_utc": "2026-09-18T05:01:13Z",
-   "account_id": "101-001-39369941-001",
-   "arm": "control",
-   "pl": -13.6
-  },
-  {
-   "pair": "GBP_JPY",
-   "direction": "short",
-   "units": -16914.0,
-   "opened_utc": "2026-09-18T09:02:03Z",
-   "account_id": "101-001-39369941-001",
-   "arm": "control",
-   "pl": 86.77
-  },
-  {
-   "pair": "USD_JPY",
-   "direction": "short",
-   "units": -22295.0,
-   "opened_utc": "2026-09-18T05:01:12Z",
-   "account_id": "101-001-39369941-003",
-   "arm": "candidate",
-   "pl": 31.69
-  },
-  {
-   "pair": "GBP_JPY",
-   "direction": "short",
-   "units": -19428.0,
-   "opened_utc": "2026-09-18T05:01:12Z",
-   "account_id": "101-001-39369941-003",
-   "arm": "candidate",
-   "pl": -13.5
-  },
-  {
-   "pair": "GBP_JPY",
-   "direction": "short",
-   "units": -16792.0,
-   "opened_utc": "2026-09-18T09:02:07Z",
-   "account_id": "101-001-39369941-003",
-   "arm": "candidate",
-   "pl": 86.47
-  }
- ]
+ "positions": []
 }

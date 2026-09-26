@@ -1,16 +1,16 @@
 # Trade review — 2026-09-12 to 2026-09-19
 
-Every trade closed in the window, plus every trade still open, for the active demo strategies. Paths are replayed on H4 **mid** candles — a description of what the market did, not a fill simulation. Each proposed change is shown with its effect on the whole 8.7-year population (2018-02-02 .. 2026-09-18), because hindsight on one trade always finds a better parameter.
+Every trade closed in the window, plus every trade still open, for the active demo strategies. Paths are replayed on H4 **mid** candles — a description of what the market did, not a fill simulation. Each proposed change is shown with its effect on the whole 8.7-year population (2018-02-04 .. 2026-09-18), because hindsight on one trade always finds a better parameter.
 
 ## rsi_reversion — CONTROL — volatility gate ON
 
-Account 101-001-39369941-001 · current params `8790f29efd3b` · 6 closed (-4.41R) · 3 open
+Account 101-001-39369941-001 · current params `5cd41c2d7795` · 6 closed (-4.41R) · 3 open
 
 ### #44 AUD_USD long · pullback · stop -1.00R
 
 Opened Thu 10 Sep 13:02 UTC · closed Mon 14 Sep 09:16 · entry 0.71674 · stop 0.71246 · target 0.72959
 
-Traded under params `43ae93644557` (reconstructed) — **differs from current in:** bot.EXCLUDED_ENTRY_HOURS_UTC [21]→[21, 22]; bot.ROLLOVER_LOCAL_HOUR None→17; risk.daily_loss_limit 0.2→0.25; risk.enforce_daily_loss_limit None→True; risk.margin_buffer_pct None→0.1; risk.max_open_positions 8→0
+Traded under params `43ae93644557` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.EXCLUDED_ENTRY_HOURS_UTC [21]→[21, 22]; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.ROLLOVER_LOCAL_HOUR None→17; bot.WEEKLY_REOPEN_HOUR_ET None→17
 
 **Why we entered**
 
@@ -28,7 +28,7 @@ Traded under params `43ae93644557` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **stopped out after being in profit** — 9% of the 1073 trades in 8.7 years end this way.
+- Outcome: **stopped out after being in profit** — 8% of the 367 trades in 8.7 years end this way.
 - Gave back 1.47R from its peak. That alone is not a signal: across the population the peak falls anywhere in the hold, and capping winners costs more than it saves.
 - **Expected** — a normal outcome for these rules.
 
@@ -36,13 +36,13 @@ Traded under params `43ae93644557` (reconstructed) — **differs from current in
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| hold (bars) 12 → 6 | -1.03R → **+0.40R** | -0.0248R  [-0.061, +0.011] | helps this trade, no measurable effect on the book |
+| hold (bars) 12 → 6 | -1.03R → **+0.40R** | -0.0228R  [-0.073, +0.027] | helps this trade, no measurable effect on the book |
 
 ### #45 USD_CAD short · pullback · stop -1.08R
 
 Opened Fri 11 Sep 13:04 UTC · closed Mon 14 Sep 12:31 · entry 1.38611 · stop 1.39110 · target 1.37115
 
-Traded under params `43ae93644557` (reconstructed) — **differs from current in:** bot.EXCLUDED_ENTRY_HOURS_UTC [21]→[21, 22]; bot.ROLLOVER_LOCAL_HOUR None→17; risk.daily_loss_limit 0.2→0.25; risk.enforce_daily_loss_limit None→True; risk.margin_buffer_pct None→0.1; risk.max_open_positions 8→0
+Traded under params `43ae93644557` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.EXCLUDED_ENTRY_HOURS_UTC [21]→[21, 22]; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.ROLLOVER_LOCAL_HOUR None→17; bot.WEEKLY_REOPEN_HOUR_ET None→17
 
 **Why we entered**
 
@@ -59,20 +59,20 @@ Traded under params `43ae93644557` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **stopped out, never meaningfully in profit** — 14% of the 1073 trades in 8.7 years end this way.
+- Outcome: **stopped out, never meaningfully in profit** — 11% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| hold (bars) 12 → 4 | -1.04R → **-0.31R** | -0.0515R  [-0.094, -0.009] | helps this trade, **hurts the book** |
+| hold (bars) 12 → 4 | -1.04R → **-0.31R** | -0.0246R  [-0.088, +0.039] | helps this trade, no measurable effect on the book |
 
 ### #46 AUD_USD long · pullback · time -0.39R
 
 Opened Mon 14 Sep 01:04 UTC · closed Wed 16 Sep 01:06 · entry 0.71459 · stop 0.70987 · target 0.72875
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -90,20 +90,20 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **12-bar clock closed it at a loss** — 15% of the 1073 trades in 8.7 years end this way.
+- Outcome: **12-bar clock closed it at a loss** — 6% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| hold (bars) 12 → 4 | -0.42R → **-0.01R** | -0.0515R  [-0.094, -0.009] | helps this trade, **hurts the book** |
+| hold (bars) 12 → 4 | -0.42R → **-0.01R** | -0.0246R  [-0.088, +0.039] | helps this trade, no measurable effect on the book |
 
 ### #50 AUD_USD long · pullback · time +0.07R
 
 Opened Mon 14 Sep 09:16 UTC · closed Wed 16 Sep 09:08 · entry 0.71258 · stop 0.70747 · target 0.72792
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -122,7 +122,7 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **12-bar clock closed it near flat** — 22% of the 1073 trades in 8.7 years end this way.
+- Outcome: **12-bar clock closed it near flat** — 11% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
@@ -133,7 +133,7 @@ No tested parameter change would have moved this trade by 0.25R or more.
 
 Opened Tue 15 Sep 13:02 UTC · closed Wed 16 Sep 18:26 · entry 1.39242 · stop 1.39721 · target 1.37805
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -153,7 +153,7 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **stopped out after being in profit** — 9% of the 1073 trades in 8.7 years end this way.
+- Outcome: **stopped out after being in profit** — 8% of the 367 trades in 8.7 years end this way.
 - Gave back 1.37R from its peak. That alone is not a signal: across the population the peak falls anywhere in the hold, and capping winners costs more than it saves.
 - **Expected** — a normal outcome for these rules.
 
@@ -161,15 +161,15 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| hold (bars) 12 → 4 | -1.04R → **-0.14R** | -0.0515R  [-0.094, -0.009] | helps this trade, **hurts the book** |
-| counter-trend cap (ATR) 3.0 → 1.0 | -1.04R → **+0.00R** (entry would have been blocked) | -0.0098R  [-0.093, +0.074] | helps this trade, no measurable effect on the book |
-| RSI depth cap 5.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | +0.0170R  [-0.062, +0.097] | helps this trade, no measurable effect on the book |
+| hold (bars) 12 → 4 | -1.04R → **-0.14R** | -0.0246R  [-0.088, +0.039] | helps this trade, no measurable effect on the book |
+| counter-trend cap (ATR) 3.0 → 1.0 | -1.04R → **+0.00R** (entry would have been blocked) | +0.0074R  [-0.122, +0.137] | helps this trade, no measurable effect on the book |
+| RSI depth cap 5.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | +0.0283R  [-0.095, +0.151] | helps this trade, no measurable effect on the book |
 
 ### #54 USD_CAD short · fade · stop -1.01R
 
 Opened Wed 16 Sep 13:04 UTC · closed Wed 16 Sep 18:41 · entry 1.39396 · stop 1.39861 · target 1.38002
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -189,20 +189,20 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **stopped out, never meaningfully in profit** — 14% of the 1073 trades in 8.7 years end this way.
+- Outcome: **stopped out, never meaningfully in profit** — 11% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| counter-trend cap (ATR) 3.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | -0.0179R  [-0.096, +0.061] | helps this trade, no measurable effect on the book |
+| counter-trend cap (ATR) 3.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | -0.0180R  [-0.140, +0.104] | helps this trade, no measurable effect on the book |
 
 ### #57 USD_JPY short · pullback · OPEN
 
 Opened Fri 18 Sep 05:01 UTC · entry 157.132 · stop 158.430 · target 153.238
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -226,7 +226,7 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 Opened Fri 18 Sep 05:01 UTC · entry 210.096 · stop 211.586 · target 205.627
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -250,7 +250,7 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 Opened Fri 18 Sep 09:02 UTC · entry 211.010 · stop 212.741 · target 205.816
 
-Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `49c4958716b9` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -275,23 +275,23 @@ Traded under params `49c4958716b9` (reconstructed) — **differs from current in
 
 | outcome | this week | 8.7-year share |
 |---|---|---|
-| stopped out after being in profit | 2 | 9% |
-| stopped out, never meaningfully in profit | 2 | 14% |
-| 12-bar clock closed it at a loss | 1 | 15% |
-| 12-bar clock closed it near flat | 1 | 22% |
+| stopped out after being in profit | 2 | 8% |
+| stopped out, never meaningfully in profit | 2 | 11% |
+| 12-bar clock closed it at a loss | 1 | 6% |
+| 12-bar clock closed it near flat | 1 | 11% |
 
-**Unusual week:** 4 of 6 closed trades hit the stop against 23% expected — about a 3% chance under these rules. Worth understanding; on its own, not a reason to change a parameter (see the clusters below and SECTION B of the weekly review).
+**Unusual week:** 4 of 6 closed trades hit the stop against 19% expected — about a 1% chance under these rules. Worth understanding; on its own, not a reason to change a parameter (see the clusters below and SECTION B of the weekly review).
 **One move, 2 positions:** #52, #54 (USD_CAD short) all closed between Wed 18:26 and 18:41 UTC for -2.02R combined — one market event, so read these together rather than as 2 independent outcomes.
 
 ## rsi_reversion_nogate — A/B CANDIDATE — volatility gate OFF
 
-Account 101-001-39369941-003 · current params `2ceea3cfa9bc` · 5 closed (-2.90R) · 3 open
+Account 101-001-39369941-003 · current params `28ae28835d3f` · 5 closed (-2.90R) · 3 open
 
 ### #47 AUD_USD long · pullback · time -0.39R
 
 Opened Mon 14 Sep 01:04 UTC · closed Wed 16 Sep 01:06 · entry 0.71459 · stop 0.70987 · target 0.72875
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -308,20 +308,20 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **12-bar clock closed it at a loss** — 15% of the 1073 trades in 8.7 years end this way.
+- Outcome: **12-bar clock closed it at a loss** — 6% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| hold (bars) 12 → 4 | -0.42R → **-0.01R** | -0.0515R  [-0.094, -0.009] | helps this trade, **hurts the book** |
+| hold (bars) 12 → 4 | -0.42R → **-0.01R** | -0.0246R  [-0.088, +0.039] | helps this trade, no measurable effect on the book |
 
 ### #48 EUR_USD long · fade · time -0.46R
 
 Opened Mon 14 Sep 05:04 UTC · closed Wed 16 Sep 05:07 · entry 1.15657 · stop 1.15175 · target 1.17104
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -340,20 +340,20 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **12-bar clock closed it at a loss** — 15% of the 1073 trades in 8.7 years end this way.
+- Outcome: **12-bar clock closed it at a loss** — 6% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| volatility gate OFF → ON | -0.47R → **+0.00R** (the control's gate would have blocked it) | -0.0020R  [-0.073, +0.069] | helps this trade, no measurable effect on the book |
+| volatility gate OFF → ON | -0.47R → **+0.00R** (the control's gate would have blocked it) | -0.0063R  [-0.118, +0.105] | helps this trade, no measurable effect on the book |
 
 ### #49 AUD_USD long · pullback · time -0.03R
 
 Opened Mon 14 Sep 09:00 UTC · closed Wed 16 Sep 09:07 · entry 0.71310 · stop 0.70799 · target 0.72844
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -372,7 +372,7 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **12-bar clock closed it near flat** — 22% of the 1073 trades in 8.7 years end this way.
+- Outcome: **12-bar clock closed it near flat** — 11% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
@@ -383,7 +383,7 @@ No tested parameter change would have moved this trade by 0.25R or more.
 
 Opened Tue 15 Sep 13:02 UTC · closed Wed 16 Sep 18:31 · entry 1.39247 · stop 1.39731 · target 1.37815
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -403,7 +403,7 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **stopped out after being in profit** — 9% of the 1073 trades in 8.7 years end this way.
+- Outcome: **stopped out after being in profit** — 8% of the 367 trades in 8.7 years end this way.
 - Gave back 1.38R from its peak. That alone is not a signal: across the population the peak falls anywhere in the hold, and capping winners costs more than it saves.
 - **Expected** — a normal outcome for these rules.
 
@@ -411,15 +411,15 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| hold (bars) 12 → 4 | -1.04R → **-0.13R** | -0.0515R  [-0.094, -0.009] | helps this trade, **hurts the book** |
-| counter-trend cap (ATR) 3.0 → 1.0 | -1.04R → **+0.00R** (entry would have been blocked) | -0.0098R  [-0.093, +0.074] | helps this trade, no measurable effect on the book |
-| RSI depth cap 5.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | +0.0170R  [-0.062, +0.097] | helps this trade, no measurable effect on the book |
+| hold (bars) 12 → 4 | -1.04R → **-0.13R** | -0.0246R  [-0.088, +0.039] | helps this trade, no measurable effect on the book |
+| counter-trend cap (ATR) 3.0 → 1.0 | -1.04R → **+0.00R** (entry would have been blocked) | +0.0074R  [-0.122, +0.137] | helps this trade, no measurable effect on the book |
+| RSI depth cap 5.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | +0.0283R  [-0.095, +0.151] | helps this trade, no measurable effect on the book |
 
 ### #53 USD_CAD short · fade · stop -1.01R
 
 Opened Wed 16 Sep 13:03 UTC · closed Wed 16 Sep 18:41 · entry 1.39398 · stop 1.39863 · target 1.38004
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -439,20 +439,20 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 **Expected?**
 
-- Outcome: **stopped out, never meaningfully in profit** — 14% of the 1073 trades in 8.7 years end this way.
+- Outcome: **stopped out, never meaningfully in profit** — 11% of the 367 trades in 8.7 years end this way.
 - **Expected** — a normal outcome for these rules.
 
 **What would have changed it**
 
 | change | this trade | across 8.7 years (Δ exp/trade, 95% CI) | verdict |
 |---|---|---|---|
-| counter-trend cap (ATR) 3.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | -0.0179R  [-0.096, +0.061] | helps this trade, no measurable effect on the book |
+| counter-trend cap (ATR) 3.0 → 2.0 | -1.04R → **+0.00R** (entry would have been blocked) | -0.0180R  [-0.140, +0.104] | helps this trade, no measurable effect on the book |
 
 ### #55 USD_JPY short · pullback · OPEN
 
 Opened Fri 18 Sep 05:01 UTC · entry 157.132 · stop 158.430 · target 153.238
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -476,7 +476,7 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 Opened Fri 18 Sep 05:01 UTC · entry 210.096 · stop 211.586 · target 205.627
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -500,7 +500,7 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 Opened Fri 18 Sep 09:02 UTC · entry 211.013 · stop 212.744 · target 205.819
 
-Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** risk.max_positions_per_pair 2→0
+Traded under params `17b2f25748d6` (reconstructed) — **differs from current in:** bot.ENTRY_WINDOWS_ET None→{'EUR_USD': ((8, 12),), 'GBP_USD': ((8, 12),), 'USD_JPY': ((0, 5), (8, 12)), 'AUD_USD': ((22, 6),), 'NZD_USD': ((22, 5),), 'USD_CAD': ((8, 17),), 'GBP_JPY': ((0, 9),)}; bot.FRIDAY_FLATTEN_HOUR_ET None→16; bot.FRIDAY_FLATTEN_WEEKDAY None→4; bot.WEEKLY_REOPEN_HOUR_ET None→17; bot.WINDOW_END_INCLUSIVE None→False; risk.max_positions_per_pair 2→0
 
 **Why we entered**
 
@@ -525,10 +525,10 @@ Traded under params `17b2f25748d6` (reconstructed) — **differs from current in
 
 | outcome | this week | 8.7-year share |
 |---|---|---|
-| 12-bar clock closed it at a loss | 2 | 15% |
-| 12-bar clock closed it near flat | 1 | 22% |
-| stopped out after being in profit | 1 | 9% |
-| stopped out, never meaningfully in profit | 1 | 14% |
+| 12-bar clock closed it at a loss | 2 | 6% |
+| 12-bar clock closed it near flat | 1 | 11% |
+| stopped out after being in profit | 1 | 8% |
+| stopped out, never meaningfully in profit | 1 | 11% |
 
 **One move, 2 positions:** #51, #53 (USD_CAD short) all closed between Wed 18:31 and 18:41 UTC for -2.03R combined — one market event, so read these together rather than as 2 independent outcomes.
 
@@ -540,12 +540,12 @@ Each row is a change that would have improved at least one trade this week. The 
 |---|---|---|---|---|---|
 | rsi_reversion | counter-trend cap (ATR) → 1.0 | 2 (+2.08R) | 0 (+0.00R) | +2.08R | WITHIN NOISE |
 | rsi_reversion | counter-trend cap (ATR) → 2.0 | 1 (+1.04R) | 0 (+0.00R) | +1.04R | WITHIN NOISE |
-| rsi_reversion | hold (bars) → 4 | 4 (+2.89R) | 0 (+0.00R) | +2.95R | HURTS |
+| rsi_reversion | hold (bars) → 4 | 4 (+2.89R) | 0 (+0.00R) | +2.95R | WITHIN NOISE |
 | rsi_reversion | hold (bars) → 6 | 2 (+2.18R) | 0 (+0.00R) | +2.23R | WITHIN NOISE |
 | rsi_reversion | RSI depth cap → 2.0 | 1 (+1.04R) | 0 (+0.00R) | +1.04R | WITHIN NOISE |
 | rsi_reversion_nogate | counter-trend cap (ATR) → 1.0 | 2 (+2.08R) | 0 (+0.00R) | +2.08R | WITHIN NOISE |
 | rsi_reversion_nogate | counter-trend cap (ATR) → 2.0 | 1 (+1.04R) | 0 (+0.00R) | +1.04R | WITHIN NOISE |
-| rsi_reversion_nogate | hold (bars) → 4 | 2 (+1.32R) | 0 (+0.00R) | +1.50R | HURTS |
+| rsi_reversion_nogate | hold (bars) → 4 | 2 (+1.32R) | 0 (+0.00R) | +1.50R | WITHIN NOISE |
 | rsi_reversion_nogate | RSI depth cap → 2.0 | 1 (+1.04R) | 0 (+0.00R) | +1.04R | WITHIN NOISE |
 | rsi_reversion_nogate | volatility gate → ON | 1 (+0.47R) | 0 (+0.00R) | +0.47R | WITHIN NOISE |
 
