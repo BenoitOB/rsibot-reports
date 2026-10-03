@@ -1,14 +1,14 @@
 ```
 ==============================================================================
-WEEKLY REVIEW — 2026-09-26 11:00 UTC
+WEEKLY REVIEW — 2026-10-03 11:00 UTC
 baseline: 2026-09-19 rev no-git | 328 sim trades / 5.49y | exp +0.100R sd 0.80
 ==============================================================================
 
 A. EXECUTION INTEGRITY  — bugs; one occurrence is enough to act
   [OK  ] stop exits worse than -1.35R: 0
-  [OK  ] days since last entry: 1.9 (expected 0.3 at 1.15/wk, P(zero)=0.730) — within normal quiet
+  [OK  ] days since last entry: 8.9 (expected 1.5 at 1.15/wk, P(zero)=0.232) — within normal quiet
   [OK  ] broker close/order rejections (7d): 0
-  [OK  ] failed poll cycles (7d): 1  [auth-401: 25]  ~0.05% of polls
+  [WARN] failed poll cycles (7d): 39  [auth-401: 41]  ~1.93% of polls
   [OK  ] journal rows open but closed at broker: 0
   [OK  ] known bug artefacts excluded from scoring: #41, #42, #43
   [WARN] exit mix live vs expected: stop 25%/18%  time 75%/39%  target 0%/1%
