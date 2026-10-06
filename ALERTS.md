@@ -95,3 +95,4 @@
 - **2026-10-02 23:30 UTC** — Trading bot resumed — rsi_reversion resumed after 90 min
 - **2026-10-05 01:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
 - **2026-10-05 08:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
+- **2026-10-06 03:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
