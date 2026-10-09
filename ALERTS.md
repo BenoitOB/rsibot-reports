@@ -105,3 +105,4 @@
 - **2026-10-09 23:00 UTC** — Trading bot blocked — rsi_reversion blocked 70 min — heartbeat 94 min old — the loop claims to be running but is not polling; rsi_reversion_nogate blocked 70 min — heartbeat 93 min old — the loop claims to be running but is not polling
 - **2026-10-09 23:10 UTC** — Trading bot blocked — rsi_reversion blocked 80 min — heartbeat 104 min old — the loop claims to be running but is not polling; rsi_reversion_nogate blocked 80 min — heartbeat 103 min old — the loop claims to be running but is not polling
 - **2026-10-09 23:20 UTC** — Trading bot resumed — rsi_reversion resumed after 90 min
+- **2026-10-09 23:20 UTC** — Trading bot resumed — rsi_reversion_nogate resumed after 90 min
