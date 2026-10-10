@@ -1,10 +1,10 @@
-# Trading Bots — weekly data (2026-09-26 → 2026-10-03)
-_generated 2026-10-03 11:00 UTC_
+# Trading Bots — weekly data (2026-10-03 → 2026-10-10)
+_generated 2026-10-10 11:00 UTC_
 
 - Balance **$9415.28** | NAV $9415.28 | open: flat
 - Week P&L: **$0.0 (0.0%)** (start $9415.28)
 - Uptime (7d): **98.9%** | last beat 1.0 min ago
-- API health (7d): **78 failed poll cycles** (3.87% of polls, rising vs prior week) — {'auth_401': 2, 'network': 0, 'other': 76}
+- API health (7d): **92 failed poll cycles** (4.56% of polls, rising vs prior week) — {'auth_401': 12, 'network': 0, 'other': 80}
 
 ## Strategies running (note: weekend_gap uses its OWN sub-account)
 | strategy | running | risk/trade | account | pairs | trades | win% | PF |
@@ -43,4 +43,4 @@ _the point of running this live: positive slippage = ADVERSE. Total cost = sprea
 
 ## Volatility gate (Filter C) — performance of the SKIPPED trades
 _gate is working if the skipped set has PF < 1.0 (it removed losers)_
-- {"n": 42, "logged": 62, "win_pct": 47.6, "pf": 0.49, "expectancy_R": -0.206, "verdict": "GATE EARNING ITS KEEP (skipped set is a loser)"}
+- {"n": 62, "logged": 64, "win_pct": 45.2, "pf": 0.44, "expectancy_R": -0.236, "verdict": "GATE EARNING ITS KEEP (skipped set is a loser)"}
