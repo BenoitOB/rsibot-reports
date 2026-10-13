@@ -108,3 +108,4 @@
 - **2026-10-09 23:20 UTC** — Trading bot resumed — rsi_reversion_nogate resumed after 90 min
 - **2026-10-12 09:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
 - **2026-10-12 18:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
+- **2026-10-13 04:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
