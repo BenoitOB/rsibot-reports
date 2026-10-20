@@ -124,3 +124,4 @@
 - **2026-10-16 23:10 UTC** — Trading bot blocked — rsi_reversion blocked 90 min — heartbeat 105 min old — the loop claims to be running but is not polling
 - **2026-10-16 23:20 UTC** — Trading bot resumed — rsi_reversion resumed after 100 min
 - **2026-10-19 09:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
+- **2026-10-20 01:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
