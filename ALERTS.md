@@ -130,3 +130,4 @@
 - **2026-10-21 01:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
 - **2026-10-21 02:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
 - **2026-10-21 06:10 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (<urlopen error [Errno 111] Connection refused>)
+- **2026-10-21 08:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
