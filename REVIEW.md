@@ -1,37 +1,39 @@
 ```
 ==============================================================================
-WEEKLY REVIEW — 2026-10-17 11:00 UTC
-baseline: 2026-09-19 rev no-git | 328 sim trades / 5.49y | exp +0.100R sd 0.80
+WEEKLY REVIEW — 2026-10-24 11:00 UTC
+baseline: 2026-10-19 rev no-git | 701 sim trades / 5.46y | exp +0.133R sd 0.78
 scoring trades opened on/after 2026-09-19 21:40 UTC (the rules this baseline describes)
 ==============================================================================
 
 A. EXECUTION INTEGRITY  — bugs; one occurrence is enough to act
   [OK  ] stop exits worse than -1.35R: 0
-  [OK  ] days since last entry: 0.7 (expected 0.1 at 1.15/wk, P(zero)=0.884) — within normal quiet
+  [OK  ] days since last entry: 2.4 (expected 0.9 at 2.47/wk, P(zero)=0.427) — within normal quiet
+  [OK  ] would-be halts (7d): none — no safety limit came close to firing
   [OK  ] broker close/order rejections (7d): 0
-  [OK  ] failed poll cycles in TRADEABLE hours (7d): 4  [auth-401: 59]  ~0.20% of polls  (+20 while the market was shut — ignored)
+  [OK  ] failed poll cycles in TRADEABLE hours (7d): 1  [auth-401: 71]  ~0.05% of polls
+  [OK  ] live account: 101-001-39369941-001 = "Primary" in the OANDA UI | last broker FILL 2026-10-23 20:03:08 UTC (102 lifetime)
   [OK  ] journal rows open but closed at broker: 0
-  [OK  ] exit-mix check deferred (n=5, needs 15)
+  [OK  ] exit-mix check deferred (n=11, needs 15)
 
 B. EDGE TRACKING  — observe; act ONLY on a band breach
-  closed under current rules: n=5  sumR=+3.58  mean=+0.716R
-  expected +0.100R, 95% band at n~5: [-0.598, +0.799]  (cum [-3.0, +4.0]R)
+  closed under current rules: n=11  sumR=+3.34  mean=+0.304R
+  expected +0.133R, 95% band at n~10: [-0.352, +0.618]  (cum [-3.5, +6.2]R)
   [OK  ] inside the band — this week carries NO information about the edge. Change nothing.
-  progress to significance: 5/242 trades (~4.0 more years at 1.15/wk)
+  progress to significance: 11/133 trades (~1.0 more years at 2.47/wk)
 
   kill switch: trailing 50 closed trades sum < -5.0R -> take the strategy off risk
-  [warm-up] 5/50 trades under current rules — not armed yet (~9.1 months to arm)
+  [warm-up] 11/50 trades under current rules — not armed yet (~3.7 months to arm)
   interim backstop remains the account drawdown halt (note: enforce_halts is False on this practice account)
 
 C. PAIR WATCH  — informational ONLY. Do not prune on these numbers.
   pair      live n   live R   exp R  yrs+  note
-  GBP_USD        0        -  -0.089  0/1   lowest-ranked (NOT a drop signal — see note above)
-  USD_CAD        1   -0.342  +0.018  4/6   inconsistent across years
-  GBP_JPY        0        -  +0.027  4/6   inconsistent across years
-  USD_JPY        2   +0.460  +0.086  3/5   inconsistent across years
-  EUR_USD        0        -  +0.211  1/1   
-  NZD_USD        1   -0.009  +0.221  4/6   inconsistent across years
-  AUD_USD        1   +3.013  +0.238  4/6   inconsistent across years
+  USD_CAD        1   -0.342  +0.012  4/6   inconsistent across years
+  GBP_JPY        0        -  +0.038  4/6   inconsistent across years
+  GBP_USD        1   +0.280  +0.075  3/5   inconsistent across years
+  USD_JPY        2   +0.460  +0.176  6/6   
+  NZD_USD        5   -0.156  +0.194  4/6   inconsistent across years
+  AUD_USD        2   +1.633  +0.211  4/6   inconsistent across years
+  EUR_USD        0        -  +0.224  6/6   
 
 D. RESEARCH QUEUE  — one falsifiable test per week, bar set in advance
   pass bar (fixed before any test runs): pooled_pf >= 1.30 net of measured spreads; year_consistency positive in >= 2/3 of full years tested; breadth positive on >= 5 of 8 instruments; tuning none — parameters fixed before the test, no post-hoc sweeps; sample >= 200 trades or the result is 'insufficient', not 'fail'; _calibration_2026_09_13 A 26-week-shifted placebo on ~200-trade terciles produced a 0.14R gap from noise (cftc-positioning-conditioning). The 0.10R pooled-gap bar is below that floor. Raise the bar above ~0.15R for tercile comparisons at this sample size, or require a placebo arm to establish the floor for that specific test.

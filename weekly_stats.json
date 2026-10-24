@@ -1,60 +1,60 @@
 {
-  "generated_utc": "2026-10-17 11:00 UTC",
+  "generated_utc": "2026-10-24 11:00 UTC",
   "vol_gate": {
     "n": 64,
-    "logged": 64,
+    "logged": 71,
     "win_pct": 46.9,
     "pf": 0.48,
     "expectancy_R": -0.211,
     "verdict": "GATE EARNING ITS KEEP (skipped set is a loser)"
   },
   "api_errors": {
-    "failed_poll_cycles_7d": 48,
-    "prior_7d": 92,
+    "failed_poll_cycles_7d": 2,
+    "prior_7d": 47,
     "trend": "falling",
     "by_type": {
-      "auth_401": 8,
+      "auth_401": 2,
       "network": 0,
-      "other": 40
+      "other": 0
     },
-    "pct_of_polls": 2.38,
-    "note": "ELEVATED - investigate broker auth/network"
+    "pct_of_polls": 0.1,
+    "note": "occasional transient failures - monitor"
   },
   "week": {
-    "from": "2026-10-10",
-    "to": "2026-10-17"
+    "from": "2026-10-17",
+    "to": "2026-10-24"
   },
   "account": {
-    "balance": 9906.59,
-    "nav": 9906.59,
+    "balance": 9851.9,
+    "nav": 9851.9,
     "open_positions": [],
     "unrealized_pl": 0.0
   },
   "week_pl": {
-    "usd": 491.31,
-    "pct": 5.22,
-    "start_balance": 9415.28,
+    "usd": -54.68,
+    "pct": -0.55,
+    "start_balance": 9906.59,
     "balance_adjusted_at": null
   },
-  "uptime_7d_pct": 98.9,
-  "last_heartbeat_min_ago": 1.0,
+  "uptime_7d_pct": 100.0,
+  "last_heartbeat_min_ago": 4.0,
   "per_account": {
     "101-001-39369941-001": {
       "strategies": [
         "rsi_reversion"
       ],
       "is_main": true,
-      "balance": 9906.59,
-      "nav": 9906.59,
+      "balance": 9851.9,
+      "nav": 9851.9,
       "unrealized_pl": 0.0,
       "open_positions": [],
       "week_pl": {
-        "usd": 491.31,
-        "pct": 5.22,
-        "start_balance": 9415.28
+        "usd": -54.68,
+        "pct": -0.55,
+        "start_balance": 9906.59
       },
       "balance_adjusted_at": null,
-      "snapshots": 31414,
+      "snapshots": 33410,
       "shared": false
     },
     "101-001-39369941-003": {
@@ -129,12 +129,12 @@
       "note": "positive slippage = ADVERSE (worse than the signal assumed); this is what the backtest could not model"
     },
     "all": {
-      "n": 25,
-      "n_closed": 25,
-      "avg_entry_slippage": 0.00229,
-      "avg_spread_pips_at_entry": 2.012,
+      "n": 31,
+      "n_closed": 31,
+      "avg_entry_slippage": 0.00188,
+      "avg_spread_pips_at_entry": 2.02903,
       "avg_gap_atr": 0.86986,
-      "avg_delay_min": 22.88739,
+      "avg_delay_min": 18.90864,
       "n_stopped_out": 7,
       "avg_stop_slippage": 6e-05,
       "by_exit_reason": {
@@ -150,7 +150,7 @@
       "losses": 0,
       "win_pct": 100.0,
       "pf": 99.9,
-      "sum_pnl_journal": 561.59,
+      "sum_pnl_journal": 44.08,
       "strategies": [
         "rsi_reversion"
       ],
@@ -195,6 +195,30 @@
       "strategy": "rsi_reversion"
     },
     "GBP_USD": {
+      "trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_pct": 100.0,
+      "pf": 99.9,
+      "sum_pnl_journal": 51.7,
+      "strategies": [
+        "rsi_reversion"
+      ],
+      "strategy": "rsi_reversion"
+    },
+    "NZD_USD": {
+      "trades": 4,
+      "wins": 1,
+      "losses": 3,
+      "win_pct": 25.0,
+      "pf": 0.18,
+      "sum_pnl_journal": -150.46,
+      "strategies": [
+        "rsi_reversion"
+      ],
+      "strategy": "rsi_reversion"
+    },
+    "USD_CAD": {
       "trades": 0,
       "wins": 0,
       "losses": 0,
@@ -206,30 +230,6 @@
         "weekend_gap"
       ],
       "strategy": "rsi_reversion, weekend_gap"
-    },
-    "NZD_USD": {
-      "trades": 1,
-      "wins": 0,
-      "losses": 1,
-      "win_pct": 0.0,
-      "pf": 0.0,
-      "sum_pnl_journal": -1.89,
-      "strategies": [
-        "rsi_reversion"
-      ],
-      "strategy": "rsi_reversion"
-    },
-    "USD_CAD": {
-      "trades": 1,
-      "wins": 0,
-      "losses": 1,
-      "win_pct": 0.0,
-      "pf": 0.0,
-      "sum_pnl_journal": -68.4,
-      "strategies": [
-        "rsi_reversion"
-      ],
-      "strategy": "rsi_reversion"
     },
     "USD_JPY": {
       "trades": 0,
@@ -246,12 +246,12 @@
   },
   "per_strategy_week": {
     "rsi_reversion": {
-      "trades": 3,
-      "wins": 1,
-      "losses": 2,
-      "win_pct": 33.3,
-      "pf": 7.99,
-      "sum_pnl_journal": 491.31,
+      "trades": 6,
+      "wins": 3,
+      "losses": 3,
+      "win_pct": 50.0,
+      "pf": 0.7,
+      "sum_pnl_journal": -54.68,
       "running": true,
       "pairs_active": [
         "AUD_USD",
@@ -342,12 +342,12 @@
     }
   },
   "gbp_forward_test": {
-    "trades": 5,
-    "wins": 2,
+    "trades": 6,
+    "wins": 3,
     "losses": 3,
-    "win_pct": 40.0,
-    "pf": 1.34,
-    "sum_pnl_journal": 120.37,
+    "win_pct": 50.0,
+    "pf": 1.49,
+    "sum_pnl_journal": 172.07,
     "backtest_pf": 1.46,
     "note": "insufficient sample"
   },

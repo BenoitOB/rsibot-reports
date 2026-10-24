@@ -1,21 +1,21 @@
 {
- "ts": "2026-10-17T11:00:18Z",
+ "ts": "2026-10-24T11:00:20Z",
  "experiment_start_utc": "2026-09-13T18:25:43.291653+00:00",
  "registered_utc": "2026-09-19T21:11:23.850619+00:00",
  "control": {
   "account_id": "101-001-39369941-001",
-  "nav": 9906.59,
-  "balance": 9906.59,
+  "nav": 9851.9,
+  "balance": 9851.9,
   "unrealized": 0.0,
   "open": 0,
-  "ab_trades": 12,
-  "drawdown_pct": 1.93,
+  "ab_trades": 18,
+  "drawdown_pct": 3.88,
   "would_block": {},
-  "ab_closed": 12,
-  "ab_total_R": 1.102,
+  "ab_closed": 18,
+  "ab_total_R": 0.865,
   "ab_incremental": 0,
   "ab_incremental_R": 0,
-  "peak_nav": 10101.39
+  "peak_nav": 10249.47
  },
  "candidate": {
   "account_id": "101-001-39369941-003",
