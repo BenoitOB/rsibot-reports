@@ -1,0 +1,369 @@
+{
+  "generated_utc": "2026-10-31 11:00 UTC",
+  "vol_gate": {
+    "n": 71,
+    "logged": 73,
+    "win_pct": 45.1,
+    "pf": 0.5,
+    "expectancy_R": -0.208,
+    "verdict": "GATE EARNING ITS KEEP (skipped set is a loser)"
+  },
+  "api_errors": {
+    "failed_poll_cycles_7d": 48,
+    "prior_7d": 2,
+    "trend": "rising",
+    "by_type": {
+      "auth_401": 4,
+      "network": 0,
+      "other": 44
+    },
+    "pct_of_polls": 2.38,
+    "note": "ELEVATED - investigate broker auth/network"
+  },
+  "week": {
+    "from": "2026-10-24",
+    "to": "2026-10-31"
+  },
+  "account": {
+    "balance": 10334.1,
+    "nav": 10334.1,
+    "open_positions": [],
+    "unrealized_pl": 0.0
+  },
+  "week_pl": {
+    "usd": 482.2,
+    "pct": 4.89,
+    "start_balance": 9851.9,
+    "balance_adjusted_at": null
+  },
+  "uptime_7d_pct": 98.8,
+  "last_heartbeat_min_ago": 2.0,
+  "per_account": {
+    "101-001-39369941-001": {
+      "strategies": [
+        "rsi_reversion"
+      ],
+      "is_main": true,
+      "balance": 10334.1,
+      "nav": 10334.1,
+      "unrealized_pl": 0.0,
+      "open_positions": [],
+      "week_pl": {
+        "usd": 482.2,
+        "pct": 4.89,
+        "start_balance": 9851.9
+      },
+      "balance_adjusted_at": null,
+      "snapshots": 35391,
+      "shared": false
+    },
+    "101-001-39369941-003": {
+      "strategies": [
+        "rsi_reversion_nogate"
+      ],
+      "is_main": false,
+      "balance": 9343.09,
+      "nav": 9343.09,
+      "unrealized_pl": 0.0,
+      "open_positions": [],
+      "week_pl": {
+        "usd": 0.0,
+        "pct": 0.0,
+        "start_balance": 9343.09
+      },
+      "balance_adjusted_at": null,
+      "snapshots": 14213,
+      "shared": false
+    },
+    "101-001-39369941-004": {
+      "strategies": [
+        "session_breakout"
+      ],
+      "is_main": false,
+      "balance": 10284.92,
+      "nav": 10284.92,
+      "unrealized_pl": 0.0,
+      "open_positions": [],
+      "week_pl": {
+        "usd": 0.0,
+        "pct": 0.0,
+        "start_balance": 10284.92
+      },
+      "balance_adjusted_at": null,
+      "snapshots": 7865,
+      "shared": false
+    }
+  },
+  "gap_account": {
+    "strategies": [
+      "rsi_reversion_nogate"
+    ],
+    "is_main": false,
+    "balance": 9343.09,
+    "nav": 9343.09,
+    "unrealized_pl": 0.0,
+    "open_positions": [],
+    "week_pl": {
+      "usd": 0.0,
+      "pct": 0.0,
+      "start_balance": 9343.09
+    },
+    "balance_adjusted_at": null,
+    "snapshots": 14213,
+    "shared": false,
+    "account_id": "101-001-39369941-003"
+  },
+  "execution_quality": {
+    "weekend_gap": {
+      "n": 1,
+      "n_closed": 1,
+      "avg_entry_slippage": 0.00011,
+      "avg_spread_pips_at_entry": 3.4,
+      "avg_gap_atr": 0.86986,
+      "avg_delay_min": 7.74697,
+      "n_stopped_out": 1,
+      "avg_stop_slippage": 2e-05,
+      "by_exit_reason": {
+        "stop": 1
+      },
+      "note": "positive slippage = ADVERSE (worse than the signal assumed); this is what the backtest could not model"
+    },
+    "all": {
+      "n": 32,
+      "n_closed": 32,
+      "avg_entry_slippage": 0.00183,
+      "avg_spread_pips_at_entry": 2.025,
+      "avg_gap_atr": 0.86986,
+      "avg_delay_min": 18.37238,
+      "n_stopped_out": 7,
+      "avg_stop_slippage": 6e-05,
+      "by_exit_reason": {
+        "stop": 7
+      },
+      "note": "positive slippage = ADVERSE (worse than the signal assumed); this is what the backtest could not model"
+    }
+  },
+  "per_pair_week": {
+    "AUD_USD": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion",
+        "weekend_gap"
+      ],
+      "strategy": "rsi_reversion, weekend_gap"
+    },
+    "EUR_JPY": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion",
+        "weekend_gap"
+      ],
+      "strategy": "rsi_reversion, weekend_gap"
+    },
+    "EUR_USD": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion",
+        "weekend_gap"
+      ],
+      "strategy": "rsi_reversion, weekend_gap"
+    },
+    "GBP_JPY": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion"
+      ],
+      "strategy": "rsi_reversion"
+    },
+    "GBP_USD": {
+      "trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_pct": 100.0,
+      "pf": 99.9,
+      "sum_pnl_journal": 482.2,
+      "strategies": [
+        "rsi_reversion"
+      ],
+      "strategy": "rsi_reversion"
+    },
+    "NZD_USD": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion",
+        "weekend_gap"
+      ],
+      "strategy": "rsi_reversion, weekend_gap"
+    },
+    "USD_CAD": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion",
+        "weekend_gap"
+      ],
+      "strategy": "rsi_reversion, weekend_gap"
+    },
+    "USD_JPY": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "strategies": [
+        "rsi_reversion"
+      ],
+      "strategy": "rsi_reversion"
+    }
+  },
+  "per_strategy_week": {
+    "rsi_reversion": {
+      "trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_pct": 100.0,
+      "pf": 99.9,
+      "sum_pnl_journal": 482.2,
+      "running": true,
+      "pairs_active": [
+        "AUD_USD",
+        "GBP_USD",
+        "EUR_USD",
+        "NZD_USD",
+        "USD_JPY",
+        "USD_CAD",
+        "GBP_JPY"
+      ],
+      "risk_per_trade": "2.0%",
+      "account": "001",
+      "account_id": "101-001-39369941-001"
+    },
+    "session_breakout": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "running": false,
+      "pairs_active": [
+        "EUR_USD",
+        "EUR_GBP",
+        "GBP_JPY",
+        "USD_JPY",
+        "XAU_USD"
+      ],
+      "risk_per_trade": null,
+      "account": "004",
+      "account_id": "101-001-39369941-004"
+    },
+    "weekend_gap": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
+      "running": false,
+      "pairs_active": [
+        "EUR_USD",
+        "GBP_USD",
+        "AUD_USD",
+        "USD_CAD",
+        "NZD_USD",
+        "EUR_JPY"
+      ],
+      "risk_per_trade": null,
+      "account": "003",
+      "account_id": "101-001-39369941-003"
+    }
+  },
+  "pair_owner": {
+    "main": {
+      "AUD_USD": "rsi_reversion",
+      "EUR_JPY": "rsi_reversion",
+      "GBP_USD": "rsi_reversion",
+      "EUR_USD": "rsi_reversion",
+      "NZD_USD": "rsi_reversion",
+      "USD_JPY": "rsi_reversion",
+      "USD_CAD": "rsi_reversion",
+      "GBP_JPY": "rsi_reversion"
+    },
+    "gap": {
+      "EUR_USD": "weekend_gap",
+      "GBP_USD": "weekend_gap",
+      "AUD_USD": "weekend_gap",
+      "USD_CAD": "weekend_gap",
+      "NZD_USD": "weekend_gap",
+      "EUR_JPY": "weekend_gap"
+    }
+  },
+  "strategies": {
+    "rsi_reversion": {
+      "running": true,
+      "pairs": [
+        "AUD_USD",
+        "GBP_USD",
+        "EUR_USD",
+        "NZD_USD",
+        "USD_JPY",
+        "USD_CAD",
+        "GBP_JPY"
+      ],
+      "risk_per_trade": "2.0%"
+    }
+  },
+  "gbp_forward_test": {
+    "trades": 7,
+    "wins": 4,
+    "losses": 3,
+    "win_pct": 57.1,
+    "pf": 2.87,
+    "sum_pnl_journal": 654.27,
+    "backtest_pf": 1.46,
+    "note": "insufficient sample"
+  },
+  "strategy": {
+    "name": "RSI reversion + vol gate (Filter C)",
+    "rsi": "30/70 fresh cross H4",
+    "pairs_R": {
+      "AUD_USD": 2.0,
+      "EUR_JPY": 2.0,
+      "GBP_USD": 2.0
+    },
+    "risk_per_trade": "5%",
+    "daily_loss_limit": "20%",
+    "vol_gate": "skip signals when ATR percentile >=66 AND ATR not expanding (<=1.1x vs 10 bars ago); live since 2026-08-07",
+    "note": "demo/practice only; EUR_JPY journal pnl can be overstated, trust balance delta"
+  }
+}
