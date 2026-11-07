@@ -1,60 +1,70 @@
 {
-  "generated_utc": "2026-10-31 11:00 UTC",
+  "generated_utc": "2026-11-07 11:00 UTC",
   "vol_gate": {
-    "n": 71,
-    "logged": 73,
-    "win_pct": 45.1,
-    "pf": 0.5,
-    "expectancy_R": -0.208,
+    "n": 73,
+    "logged": 83,
+    "win_pct": 46.6,
+    "pf": 0.53,
+    "expectancy_R": -0.187,
     "verdict": "GATE EARNING ITS KEEP (skipped set is a loser)"
   },
   "api_errors": {
-    "failed_poll_cycles_7d": 48,
-    "prior_7d": 2,
+    "failed_poll_cycles_7d": 60,
+    "prior_7d": 48,
     "trend": "rising",
     "by_type": {
-      "auth_401": 4,
+      "auth_401": 60,
       "network": 0,
-      "other": 44
+      "other": 0
     },
-    "pct_of_polls": 2.38,
+    "pct_of_polls": 2.98,
     "note": "ELEVATED - investigate broker auth/network"
   },
   "week": {
-    "from": "2026-10-24",
-    "to": "2026-10-31"
+    "from": "2026-10-31",
+    "to": "2026-11-07"
   },
   "account": {
-    "balance": 10334.1,
-    "nav": 10334.1,
-    "open_positions": [],
-    "unrealized_pl": 0.0
+    "balance": 10335.18,
+    "nav": 10655.86,
+    "open_positions": [
+      {
+        "instrument": "EUR_USD",
+        "units": "-26835"
+      }
+    ],
+    "unrealized_pl": 320.68
   },
   "week_pl": {
-    "usd": 482.2,
-    "pct": 4.89,
-    "start_balance": 9851.9,
+    "usd": 1.08,
+    "pct": 0.01,
+    "start_balance": 10334.1,
     "balance_adjusted_at": null
   },
-  "uptime_7d_pct": 98.8,
-  "last_heartbeat_min_ago": 2.0,
+  "uptime_7d_pct": 99.5,
+  "last_heartbeat_min_ago": 0.0,
   "per_account": {
     "101-001-39369941-001": {
       "strategies": [
         "rsi_reversion"
       ],
       "is_main": true,
-      "balance": 10334.1,
-      "nav": 10334.1,
-      "unrealized_pl": 0.0,
-      "open_positions": [],
+      "balance": 10335.18,
+      "nav": 10655.86,
+      "unrealized_pl": 320.68,
+      "open_positions": [
+        {
+          "instrument": "EUR_USD",
+          "units": "-26835"
+        }
+      ],
       "week_pl": {
-        "usd": 482.2,
-        "pct": 4.89,
-        "start_balance": 9851.9
+        "usd": 1.08,
+        "pct": 0.01,
+        "start_balance": 10334.1
       },
       "balance_adjusted_at": null,
-      "snapshots": 35391,
+      "snapshots": 37361,
       "shared": false
     },
     "101-001-39369941-003": {
@@ -129,12 +139,12 @@
       "note": "positive slippage = ADVERSE (worse than the signal assumed); this is what the backtest could not model"
     },
     "all": {
-      "n": 32,
-      "n_closed": 32,
-      "avg_entry_slippage": 0.00183,
-      "avg_spread_pips_at_entry": 2.025,
+      "n": 33,
+      "n_closed": 33,
+      "avg_entry_slippage": 0.00177,
+      "avg_spread_pips_at_entry": 2.01515,
       "avg_gap_atr": 0.86986,
-      "avg_delay_min": 18.37238,
+      "avg_delay_min": 17.90869,
       "n_stopped_out": 7,
       "avg_stop_slippage": 6e-05,
       "by_exit_reason": {
@@ -171,17 +181,16 @@
       "strategy": "rsi_reversion, weekend_gap"
     },
     "EUR_USD": {
-      "trades": 0,
-      "wins": 0,
+      "trades": 1,
+      "wins": 1,
       "losses": 0,
-      "win_pct": null,
-      "pf": null,
-      "sum_pnl_journal": 0,
+      "win_pct": 100.0,
+      "pf": 99.9,
+      "sum_pnl_journal": 170.67,
       "strategies": [
-        "rsi_reversion",
-        "weekend_gap"
+        "rsi_reversion"
       ],
-      "strategy": "rsi_reversion, weekend_gap"
+      "strategy": "rsi_reversion"
     },
     "GBP_JPY": {
       "trades": 0,
@@ -196,16 +205,17 @@
       "strategy": "rsi_reversion"
     },
     "GBP_USD": {
-      "trades": 1,
-      "wins": 1,
+      "trades": 0,
+      "wins": 0,
       "losses": 0,
-      "win_pct": 100.0,
-      "pf": 99.9,
-      "sum_pnl_journal": 482.2,
+      "win_pct": null,
+      "pf": null,
+      "sum_pnl_journal": 0,
       "strategies": [
-        "rsi_reversion"
+        "rsi_reversion",
+        "weekend_gap"
       ],
-      "strategy": "rsi_reversion"
+      "strategy": "rsi_reversion, weekend_gap"
     },
     "NZD_USD": {
       "trades": 0,
@@ -253,7 +263,7 @@
       "losses": 0,
       "win_pct": 100.0,
       "pf": 99.9,
-      "sum_pnl_journal": 482.2,
+      "sum_pnl_journal": 170.67,
       "running": true,
       "pairs_active": [
         "AUD_USD",

@@ -1,21 +1,21 @@
 {
- "ts": "2026-10-31T11:00:37Z",
+ "ts": "2026-11-07T11:00:18Z",
  "experiment_start_utc": "2026-09-13T18:25:43.291653+00:00",
  "registered_utc": "2026-09-19T21:11:23.850619+00:00",
  "control": {
   "account_id": "101-001-39369941-001",
-  "nav": 10334.1,
-  "balance": 10334.1,
-  "unrealized": 0.0,
-  "open": 0,
-  "ab_trades": 19,
-  "drawdown_pct": 0.02,
+  "nav": 10655.86,
+  "balance": 10335.18,
+  "unrealized": 320.68,
+  "open": 1,
+  "ab_trades": 20,
+  "drawdown_pct": 0.21,
   "would_block": {},
-  "ab_closed": 19,
-  "ab_total_R": 3.345,
+  "ab_closed": 20,
+  "ab_total_R": 4.171,
   "ab_incremental": 0,
   "ab_incremental_R": 0,
-  "peak_nav": 10336.51
+  "peak_nav": 10678.46
  },
  "candidate": {
   "account_id": "101-001-39369941-003",
@@ -32,5 +32,15 @@
   "ab_incremental_R": -0.458,
   "peak_nav": 9841.61
  },
- "positions": []
+ "positions": [
+  {
+   "pair": "EUR_USD",
+   "direction": "short",
+   "units": -26835.0,
+   "opened_utc": "2026-11-05T06:03:04Z",
+   "account_id": "101-001-39369941-001",
+   "arm": "control",
+   "pl": 320.68
+  }
+ ]
 }
