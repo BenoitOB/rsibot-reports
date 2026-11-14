@@ -1,70 +1,116 @@
 {
-  "generated_utc": "2026-11-07 11:00 UTC",
+  "generated_utc": "2026-11-14 11:00 UTC",
   "vol_gate": {
-    "n": 73,
-    "logged": 83,
-    "win_pct": 46.6,
-    "pf": 0.53,
-    "expectancy_R": -0.187,
-    "verdict": "GATE EARNING ITS KEEP (skipped set is a loser)"
+    "logged": 96,
+    "resolvable": 83,
+    "needed_n": 139,
+    "mde_R": 0.15,
+    "by_reason": {
+      "counter_trend": {
+        "n": 70,
+        "exp": -0.0858,
+        "ci95": [
+          -0.26,
+          0.088
+        ],
+        "pf": 0.75,
+        "win_pct": 54.3,
+        "total_R": -6.0,
+        "per_week": 6.0,
+        "weeks_to_power": 11.4,
+        "verdict": "ACCUMULATING \u2014 70/139 needed to resolve 0.15R; this number carries no decision yet"
+      },
+      "vol_gate_high_not_expanding": {
+        "n": 11,
+        "exp": -0.3237,
+        "ci95": [
+          -0.815,
+          0.167
+        ],
+        "pf": 0.43,
+        "win_pct": 27.3,
+        "total_R": -3.56,
+        "per_week": 0.9,
+        "weeks_to_power": 135.1,
+        "verdict": "ACCUMULATING \u2014 11/139 needed to resolve 0.15R; this number carries no decision yet"
+      },
+      "rsi_too_deep": {
+        "n": 2,
+        "exp": -0.7174,
+        "ci95": null,
+        "pf": 0.0,
+        "win_pct": 0.0,
+        "total_R": -1.43,
+        "per_week": 0.2,
+        "weeks_to_power": 795.1,
+        "verdict": "ACCUMULATING \u2014 2/139 needed to resolve 0.15R; this number carries no decision yet"
+      }
+    },
+    "n": 83,
+    "exp": -0.1325,
+    "pf": 0.66,
+    "win_pct": 49.4,
+    "expectancy_R": -0.1325,
+    "pooled": {
+      "n": 83,
+      "exp": -0.1325,
+      "ci95": [
+        -0.295,
+        0.03
+      ],
+      "pf": 0.66,
+      "win_pct": 49.4,
+      "total_R": -11.0,
+      "verdict": "pooled across ALL filters \u2014 not a verdict on any one of them; read by_reason"
+    }
   },
   "api_errors": {
-    "failed_poll_cycles_7d": 60,
-    "prior_7d": 48,
-    "trend": "rising",
+    "failed_poll_cycles_7d": 18,
+    "prior_7d": 30,
+    "trend": "falling",
     "by_type": {
-      "auth_401": 60,
+      "auth_401": 18,
       "network": 0,
       "other": 0
     },
-    "pct_of_polls": 2.98,
-    "note": "ELEVATED - investigate broker auth/network"
+    "pct_of_polls": 0.89,
+    "note": "occasional transient failures - monitor"
   },
   "week": {
-    "from": "2026-10-31",
-    "to": "2026-11-07"
+    "from": "2026-11-07",
+    "to": "2026-11-14"
   },
   "account": {
-    "balance": 10335.18,
-    "nav": 10655.86,
-    "open_positions": [
-      {
-        "instrument": "EUR_USD",
-        "units": "-26835"
-      }
-    ],
-    "unrealized_pl": 320.68
+    "balance": 10957.05,
+    "nav": 10957.05,
+    "open_positions": [],
+    "unrealized_pl": 0.0
   },
   "week_pl": {
-    "usd": 1.08,
-    "pct": 0.01,
-    "start_balance": 10334.1,
+    "usd": 621.87,
+    "pct": 6.02,
+    "start_balance": 10335.18,
     "balance_adjusted_at": null
   },
-  "uptime_7d_pct": 99.5,
-  "last_heartbeat_min_ago": 0.0,
+  "uptime_7d_pct": 99.6,
+  "last_heartbeat_min_ago": 1.0,
   "per_account": {
     "101-001-39369941-001": {
       "strategies": [
         "rsi_reversion"
       ],
       "is_main": true,
-      "balance": 10335.18,
-      "nav": 10655.86,
-      "unrealized_pl": 320.68,
-      "open_positions": [
-        {
-          "instrument": "EUR_USD",
-          "units": "-26835"
-        }
-      ],
+      "balance": 10957.05,
+      "nav": 10957.05,
+      "unrealized_pl": 0.0,
+      "open_positions": [],
       "week_pl": {
-        "usd": 1.08,
-        "pct": 0.01,
-        "start_balance": 10334.1
+        "usd": 621.87,
+        "pct": 6.02,
+        "start_balance": 10335.18
       },
       "balance_adjusted_at": null,
-      "snapshots": 37361,
+      "snapshots": 39352,
       "shared": false
     },
     "101-001-39369941-003": {
@@ -186,7 +232,7 @@
       "losses": 0,
       "win_pct": 100.0,
       "pf": 99.9,
-      "sum_pnl_journal": 170.67,
+      "sum_pnl_journal": 620.16,
       "strategies": [
         "rsi_reversion"
       ],
@@ -263,7 +309,7 @@
       "losses": 0,
       "win_pct": 100.0,
       "pf": 99.9,
-      "sum_pnl_journal": 170.67,
+      "sum_pnl_journal": 620.16,
       "running": true,
       "pairs_active": [
         "AUD_USD",
@@ -358,8 +404,8 @@
     "wins": 4,
     "losses": 3,
     "win_pct": 57.1,
-    "pf": 2.87,
-    "sum_pnl_journal": 654.27,
+    "pf": 2.93,
+    "sum_pnl_journal": 671.98,
     "backtest_pf": 1.46,
     "note": "insufficient sample"
   },

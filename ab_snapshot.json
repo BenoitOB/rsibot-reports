@@ -1,21 +1,21 @@
 {
- "ts": "2026-11-07T11:00:18Z",
+ "ts": "2026-11-14T11:00:19Z",
  "experiment_start_utc": "2026-09-13T18:25:43.291653+00:00",
  "registered_utc": "2026-09-19T21:11:23.850619+00:00",
  "control": {
   "account_id": "101-001-39369941-001",
-  "nav": 10655.86,
-  "balance": 10335.18,
-  "unrealized": 320.68,
-  "open": 1,
+  "nav": 10957.05,
+  "balance": 10957.05,
+  "unrealized": 0.0,
+  "open": 0,
   "ab_trades": 20,
-  "drawdown_pct": 0.21,
+  "drawdown_pct": 0.0,
   "would_block": {},
   "ab_closed": 20,
-  "ab_total_R": 4.171,
+  "ab_total_R": 6.374,
   "ab_incremental": 0,
   "ab_incremental_R": 0,
-  "peak_nav": 10678.46
+  "peak_nav": 10957.05
  },
  "candidate": {
   "account_id": "101-001-39369941-003",
@@ -27,20 +27,10 @@
   "drawdown_pct": 5.07,
   "would_block": {},
   "ab_closed": 10,
-  "ab_total_R": -2.146,
+  "ab_total_R": -2.124,
   "ab_incremental": 1,
   "ab_incremental_R": -0.458,
   "peak_nav": 9841.61
  },
- "positions": [
-  {
-   "pair": "EUR_USD",
-   "direction": "short",
-   "units": -26835.0,
-   "opened_utc": "2026-11-05T06:03:04Z",
-   "account_id": "101-001-39369941-001",
-   "arm": "control",
-   "pl": 320.68
-  }
- ]
+ "positions": []
 }
