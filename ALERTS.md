@@ -280,3 +280,4 @@
 - **2026-11-21 01:20 UTC** — Trading bot blocked — rsi_reversion blocked 140 min — heartbeat 158 min old — the loop claims to be running but is not polling
 - **2026-11-21 01:30 UTC** — Trading bot blocked — rsi_reversion blocked 150 min — heartbeat 168 min old — the loop claims to be running but is not polling
 - **2026-11-21 01:40 UTC** — Trading bot blocked — rsi_reversion blocked 160 min — heartbeat 178 min old — the loop claims to be running but is not polling
+- **2026-11-21 01:50 UTC** — Trading bot resumed — rsi_reversion resumed after 170 min
