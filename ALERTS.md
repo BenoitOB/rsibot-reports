@@ -287,3 +287,4 @@
 - **2026-11-21 13:40 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
 - **2026-11-21 23:10 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
 - **2026-11-22 03:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
+- **2026-11-24 02:00 UTC** — Trading bot: panel unreachable — control panel unreachable at http://127.0.0.1:8080/api/status (timed out)
